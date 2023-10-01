@@ -42,7 +42,7 @@ export async function POST(request) {
   } catch (error) {
     console.log(error)
     return NextResponse.json(
-      { status: "failure", msg: "Something went wrong" },
+      { status: "failure", message: "Something went wrong" },
       { status: 400 }
     );
   }
